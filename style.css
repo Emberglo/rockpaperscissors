@@ -1,0 +1,27 @@
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+header {
+	height: fit-content;
+}
+main {
+	flex-grow: 1;
+}
+footer {
+	height: fit-content;
+}
+
+#board {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 98vw;
+}
+
+.hidden {
+	display: none;
+}
