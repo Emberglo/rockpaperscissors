@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-200">
-    <header class="text-center text-red-900 text-3xl font-bold">
+    <header class="text-center text-red-900 text-3xl font-bold bg-gray-400">
         <h1>-Rock Paper Scissors Lizard Spock-</h1>
     </header>
-    <main class="flex-col justify-center items-center pt-10 pl-2">
+    <main class="flex-col flex-wrap justify-center items-center pt-10 pl-2 w-11/12 mx-auto">
         <div id="winnerCard" class="hidden border  rounded border-gray-700 text-center p-5 mx-auto w-2/3 bg-gray-400">
             <h2 id="winner" class="text-red-800 font-medium text-2xl mb-2">Winner</h2>
             <h3>Computer Chose:</h3>
@@ -26,7 +26,7 @@
         </div>
         <div id="playerControls" class="text-gray-800 font-medium">
             <h3 class="pl-3">Your Choice:</h3>
-            <div id="board">
+            <div id="board" class="w-4/5 mx-auto">
                 <div class="border rounded-t border-gray-700 p-5 m-5 text-center bg-gray-400" onclick="play('rock')">
                     <i class="far fa-hand-rock text-6xl"></i>
                     <p>Rock</p>
@@ -53,7 +53,7 @@
             <button class="border border-red-800 rounded p-2 bg-red-600 text-white mr-2 ml-3 mt-5" onclick="rulesButton()">Rules</button>
             <div id="rules" class="hidden">
                 <p class="font-medium">Rules</p>
-                <ul>
+                <ul class="list-disc ml-4">
                     <li>Rock crushes Scissors</li>
                     <li>Rock crushes Lizard</li>
                     <li>Paper disproves Spock</li>
