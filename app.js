@@ -14,10 +14,12 @@ function loadScores() {
 	if (storedPlayerScore) {
 		playerScore = storedPlayerScore;
 	}
+	console.log(playerScore);
 	let storedCompScore = JSON.parse(window.localStorage.getItem('computer'));
 	if (storedCompScore) {
 		compScore = storedCompScore;
 	}
+	console.log(compScore);
 }
 
 function computerChoice() {
@@ -65,6 +67,7 @@ function computerWins() {
 	document.getElementById('winner').innerText = 'Computer Wins!';
 	compScore += 1;
 	saveScores();
+	document.getElementById('playerScore').innerText = `Player Score: ${playerScore}`;
 	document.getElementById('compScore').innerText = `Computer Score: ${compScore}`;
 }
 
